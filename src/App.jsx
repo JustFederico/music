@@ -1,4 +1,4 @@
-
+import Music from "./components/Music/Music"
 
 
 function App() {

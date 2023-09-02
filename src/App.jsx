@@ -1,4 +1,6 @@
+import React from "react"
 import Music from "./components/Music/Music"
+
 
 
 function App() {
@@ -8,6 +10,8 @@ function App() {
     <>
       <div>
        <h1>World of Music</h1>
+       <Music />
+       
        
       </div>
      

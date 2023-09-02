@@ -38,7 +38,7 @@ const Music = () => {
               <img
                 src={slide.fields.image.fields.file.url}
                 alt={slide.fields.title}
-                width="200" // Adjust the width as needed
+                width="600" // Adjust the width as needed
               />
             </li>
           ))}

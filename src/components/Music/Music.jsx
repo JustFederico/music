@@ -1,5 +1,7 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import * as contentful from 'contentful';
+import {Link} from 'react-router-dom';
+
 
 
 const Music = () => {
@@ -29,12 +31,13 @@ const Music = () => {
 
   return (
     <div className="music-container">
-      <h1>Music</h1>
+      <h1 className="music-header">Music</h1>
       {isMusicLoading ? (
         <p>Loading...</p>
       ) : (
         <ul>
           {musicSlides.map((slide) => (
+            <Link to={`/music/${slide.sys.id}`}>
             <li key={slide.sys.id}>
               <h2>{slide.fields.title}</h2>
               <img
@@ -43,9 +46,11 @@ const Music = () => {
                 width="600" // Adjust the width as needed
               />
             </li>
+            </Link>
+
+            
           ))}
         </ul>
-
 
       )}
       </div>

@@ -1,4 +1,9 @@
 
+body {
+  background: linear-gradient(135deg, #f06, #9f6);
+  /* Add more background styles as needed */
+}
+
 .music-header {
   color: #333;
   font-size: 24px; /* Adjust the font size */

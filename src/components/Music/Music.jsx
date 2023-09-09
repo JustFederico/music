@@ -30,8 +30,11 @@ const Music = () => {
 
 
   return (
+    
     <div className="music-container">
-      <h1 className="music-header">Music</h1>
+      <h1 style={{ fontSize: '36px', fontWeight: 'bold', color: '#333', textAlign: 'center', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)' }}>
+        Music
+      </h1>
       {isMusicLoading ? (
         <p>Loading...</p>
       ) : (

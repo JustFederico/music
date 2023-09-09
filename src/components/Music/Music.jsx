@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import * as contentful from 'contentful';
 
+
 const Music = () => {
   const [isMusicLoading, setIsMusicLoading] = useState(false);
   const [musicSlides, setMusicSlides] = useState([]);
@@ -25,6 +26,7 @@ const Music = () => {
     getMusicSlides();
   }, [getMusicSlides]);
 
+
   return (
     <div className="music-container">
       <h1>Music</h1>
@@ -43,10 +45,13 @@ const Music = () => {
             </li>
           ))}
         </ul>
+
+
       )}
-    </div>
+      </div>
+    
   );
-};
+          }
 
 export default Music;
 
